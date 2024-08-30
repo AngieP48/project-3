@@ -3,10 +3,19 @@
 
 ### Project ideation
 Through this project we will:
-1. Analyze company/stock sentiment based on related Tweets
-2. Analyze and predict future stock closing price based on sentiment
+1. Analyze stock price impacts and the potential correlation of company/stock sentiment based on related Tweets
+   
+   | Ticker | Company |
+   | :-: | - |  
+   | AAPL | Apple Inc. |  
+   | MSFT | Microsoft Corporation |  
+   | PG | Procter & Gamble Company |  
+   | TSLA | Tesla, Inc. |  
+   | TSM | Taiwan Semiconductor Manufacturing Company Limited |  
+3. Analyze and predict future stock closing price based on sentiment (Positive, Neutral, Negative)
 
-
+Data: [Stock Tweets for Sentiment Analysis and Prediction](https://www.kaggle.com/datasets/equinxx/stock-tweets-for-sentiment-analysis-and-prediction?resource=download)  
+License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
 
 - Data fetching - Kaggle
 - Data exploration
