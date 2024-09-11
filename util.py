@@ -42,7 +42,7 @@ def add_features(df):
 # Normalize numerical data
 def numerical_pre_processing(df):
     df = df.select_dtypes(['int64','float64'])
-    numerical_df = (df**2)/(1+(df**2))
+    numerical_df = df.div(df.sum(axis=1), axis=0)
 
     return numerical_df
 
