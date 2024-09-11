@@ -96,47 +96,6 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
    - Forecast
    - Create visualizations
 
-**CNN Modeling**
-- Import libraries
-- Data Preprocessing:
-  - Define the stock tweet dataframe from csv file
-  - Define the stock_yfinance dataframe from csv file
-  - Create and apply a date function to derive the data from a datetime column
-  - Create and apply function using Vader to generate a sentiment score based on the tweets in the stock_tweet dataframe
-  - Feature Engineering:
-    - Create daily count column to tally the number tweets a company has daily
-    - Create open/close diff column to calculate the difference between open and close
-    - Create Prev Close Diff column to calculate the difference between prev Close price
-  - Merge stock_tweet and stock_yfinance dataframe
-  - Isolate Close column since this is the target
-  - Separate stock dataframe into numerical and categorical dataframes for normalization.
-  - Normalize numerical data using StandardScaler
-  - Normalize categorical data using pandas get_dummies function with the dtype set to int
-  - Merge categorical and numerical dataframes to get final_stock_df
-  - Fill NA values
-  - Save final_stock_df to csv final_stock_data.csv
-- Model Creation:
-  - Import libraries
-  - Define stock_df dataframe from final_stock_data.csv
-  - Define X with all features from the stock_df except the Close feature
-  - Define y as the Close feature
-  - Split X and y values into train and test data
-  - Define the CNN model using linear regression as the focus.
-    - Created 7 Dense layers in total where the input layer has 18 nodes and the output layer has one node.
-    - Activation for model was set to 'relu' for all layer except the output layer which was set to 'linear'
-  - Compile the model with the loss metric set to mean absolute percentage error as accuracy is not a good metric for this problem.
-  - Fit and train the model, which had a loss of roughly 0.15 percent and a mean absolute error of 0.39
-  - The R2 score which is used to compare how close the predicted y values are to the true y values is: 
-  0.9999610781669617
-- Model Tuning: 
-  - Defined a create_model function that uses the same methodology as my previous model, but adjust the hyper parameters per run.
-  - Created and ran a keras_tuner variable that runs the previously defined function 60 times to get the best model and hyperparameters.
-  - With those results, we calculated the best model's R2 score which is: 0.9990188479423523
-  - Then I compared the y_test and y_pred values and they are mostly within 1 points difference.
-- Model Application: 
-  - Define a predict function to take in user inputed data to process and predict the Close value.
-  - Test the code
-  - Define the application using gradio and run.
 
 
 
