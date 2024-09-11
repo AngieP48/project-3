@@ -41,12 +41,8 @@ def add_features(df):
 
 # Normalize numerical data
 def numerical_pre_processing(df):
-    numerical_df = df.select_dtypes(['int64','float64'])
-    ct = ColumnTransformer([('scaler',StandardScaler(),numerical_df.columns)])
-    array = ct.fit_transform(numerical_df)
-    scaler = MinMaxScaler(feature_range=(0,1))
-    array = scaler.fit_transform(array)
-    numerical_df = pd.DataFrame(data=array,columns=ct.get_feature_names_out())
+    df = df.select_dtypes(['int64','float64'])
+    numerical_df = (df**2)/(1+(df**2))
 
     return numerical_df
 
@@ -55,9 +51,9 @@ def categorical_pre_processing(df):
     stock_list = ['TSLA', 'MSFT', 'PG', 'META', 'AMZN']
     categorical_df = df.select_dtypes('object')
     for a in stock_list:
-        categorical_df[f'Stock Name_{a}'] = 0
+        categorical_df[f'Stock Name_{a}'] = int(0)
     stock = categorical_df['Stock Name'][0]
-    categorical_df[f'Stock Name_{stock}'] = 1
+    categorical_df[f'Stock Name_{stock}'] = int(1)
     categorical_df = categorical_df.drop(columns=['Stock Name'])
     
     return categorical_df
