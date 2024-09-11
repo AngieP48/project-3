@@ -1,0 +1,2 @@
+Please enter a Date in YYYY-MM-DD:,Select a stock,Enter a Tweet about the company:,Enter the open price as float:,Enter the high price as float:,Enter the low price as float:,Enter the adj close price as float:,Enter the volume as an integer:,Predicted Close price:,flag,username,timestamp
+1998-22-18,TSLA,Tesla is bad mkay,128.01,230.01,108.54,228.22,210000,0,,,2024-09-10 14:08:55.076248
