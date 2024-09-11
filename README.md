@@ -60,8 +60,26 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
       - neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
       - negative sentiment: compound score <= -0.05
    - Added Positive, Neutral, Compound and Sentiment columns
-   - Grouped tweet data by Date and Stock Name to arrive at a Mean Compound score for each date, adding the column to the dataframe
-   
+   - Grouped tweet data by Date and Stock Name to arrive at a Mean Compound score for each date, renaming the Compound column to Mean Compound
+- Implemented initial training and testing loop for each stock
+   - Mapped 'Sentiment' values
+   - Split training and testing data
+   - Added 'Mean Compound' regressor
+   - Fit Predict
+   - Calculate and display metrics for each loop
+- Implemented secondary training and testing loop for each stock
+   - Mapped 'Sentiment' values
+   - Created a 60-day rolling average as an additional regressor
+   - Split training and testing data
+   - Added regressors:
+      - 'Mean Compound
+      - 'Volume'
+      - 'Sentiment'
+      - '60-day rolling average'
+   - Fit Predict
+   - Calculate and display metrics for each loop
+
+
 
 
 
