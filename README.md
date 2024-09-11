@@ -65,7 +65,9 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
    - Mapped 'Sentiment' values
    - Split training and testing data
    - Added 'Mean Compound' regressor
-   - Fit Predict
+   - Fit model
+   - Create future dataframe
+   - Predict future values
    - Calculate and display metrics for each loop
 - Implemented secondary training and testing loop for each stock
    - Mapped 'Sentiment' values
@@ -76,9 +78,23 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
       - 'Volume'
       - 'Sentiment'
       - '60-day rolling average'
-   - Fit Predict
+   - Fit model
+   - Create future dataframe
+   - Predict future values
    - Calculate and display metrics for each loop
-
+- Implmented Prophet Model with Visualizations
+   - Mapped 'Sentiment' values
+   - Created a 60-day rolling average as an additional regressor
+   - Added regressors:
+      - 'Mean Compound
+      - 'Volume'
+      - 'Sentiment'
+      - '60-day rolling average'
+   - Fit Predict
+   - Merge the df with regressors
+   - Fill null or zero values
+   - Forecast
+   - Create visualizations
 
 
 
