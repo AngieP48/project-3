@@ -193,4 +193,3 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
 
 
 
-nhancements such as word-order sensitivity for sentiment-laden multi-word phrases, degree modifiers, word-shape amplifiers, punctuation amplifiers, negation polarity switches, or contrastive conjunction sensitivity.
