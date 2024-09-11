@@ -55,10 +55,13 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
 - Implementation of VADER Sentiment Analyzer
   - Initialized Sentiment Analyzer
   - Created a function to analyze each tweet
-   - Returned a sentiment lable based on the scoring scale:
+   - Returned a sentiment label based on the scoring scale:
       - positive sentiment: compound score >= 0.05
       - neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
       - negative sentiment: compound score <= -0.05
+   - Added Positive, Neutral, Compound and Sentiment columns
+   - Grouped tweet data by Date and Stock Name to arrive at a Mean Compound score for each date, adding the column to the dataframe
+   
 
 
 
