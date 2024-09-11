@@ -39,25 +39,22 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
       - Split the data
 
 
----
+**Prophet Modeling**
+- Import dependencies
+- Read in CSV's
+- Stock Data Preprocessing
+  - Understanding the df shape and columns
+  - Assessing df data types
+  - Filtered to specific stocks for project
+  - Checked for null and blank values
+- Tweet Data Preprocessing
+  - Understanding the df shape and columns
+  - Assessing df data types
+  - Filtered to specific stocks for project
+  - Checked for null and blank values
+- Implementation of VADER Sentiment Analyzer
+  - 
 
-   - *Nice to have*  
-      - *Rolling 30, 60, 90 day return*
-      - *Various stock price indicators*
-
-
-
-
-OPENAI API prompt engineering for sentiment analysis  
-Testing ML models  
-Long Short Team (LST) memory models  
-   Used in time series analysis  
-Integrate AI tools into the project for deployment  
-   Time Series Forecasting; with Prophet  
-      Use data correlation to evaluate the predictive relationship among time series patterns  
-      Gradio Input story / grade setiment / output future stock price  
-Creating documentation  
-Creating the presentation  
 
 
 1. Using VADER (e.g., SentimentIntensityAnalyzer):
