@@ -53,7 +53,12 @@ License: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/
   - Filtered to specific stocks for project
   - Checked for null and blank values
 - Implementation of VADER Sentiment Analyzer
-  - 
+  - Initialized Sentiment Analyzer
+  - Created a function to analyze each tweet
+   - Returned a sentiment lable based on the scoring scale:
+      - positive sentiment: compound score >= 0.05
+      - neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
+      - negative sentiment: compound score <= -0.05
 
 
 
